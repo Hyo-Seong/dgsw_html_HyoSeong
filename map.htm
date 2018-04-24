@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <!-- jQuery -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>   
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+    <script src="js/jquery.ui.map.js"></script>       
+    <script src="js/map.js"></script>
+    
+</head>
+<body>
+    <div data-role="page" class="map_style">
+        <div data-role="header" data-position="fixed">
+            <a href="index.htm" data-icon="home" rel="external">Home</a>
+            <h1>학교로 오시는 길</h1>
+        </div>
+        <div data-role="content" class="map_style">
+            <div id="map_canvas" class="map_style"></div>
+        </div>
+        <div data-role="footer">
+            <h4>대구소프트웨어고등학교</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="search" id="cur_location">현재학교</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- jQuery -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+        <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>   
+        <!-- Photo Swipe -->
+        <link href="photoswipe/examples/jquery-mobile.css" type="text/css" rel="stylesheet" />
+        <link href="photoswipe/photoswipe.css" type="text/css" rel="stylesheet" />
+        <script src="photoswipe/lib/klass.min.js"></script>
+        <script src="photoswipe/code-photoswipe-jquery-3.0.5.min.js"></script>
+        <script src="photoswipe/create_ps_instance.js"></script>
+</head>
+<body>
+    <div data-role="page" id="main_page">
+        <div data-role="header">
+            <a href="index.htm" data-icon="home" rel="external">Home</a>
+            <h1>학교 소개</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview">
+                <li>
+                    <a href="#a" rel="external">
+                        <h2>학교 소개</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#b" rel="external">
+                        <h2>학교 시설 소개</h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h1>2학년 1반 이효성</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="a">
+        <div data-role="header">
+            <a href="#main_page" data-icon="home" rel="external">Home</a>
+            <h1>학교 소개</h1>
+        </div>
+        <div data-role="content">
+            <h3>1952. 01. 31.	<br>구지중학교 설립 인가(사립)
+                <br><hr>1971. 01. 01<br>	공립 구지중학교로 전환
+                <br><hr>1972. 03. 01<br>	구지상업고등학교 개교
+                <br><hr>1999. 03. 01<br>	달성정보고등학교로 교명 변경
+                <br><hr>1999. 09. 08<br>	대구광역시교육청 특성화고등학교로 지정
+                <br><hr>2007. 12. 26<br>	연구․시범학교 운영 우수 학교 표창(교육감) 컴퓨터 활용 능력 우수교육기관 표창(교육감) e-러닝 운영 우수학교 표창(교육감)
+                <br><hr>2009. 03. 01<br>	대구광역시교육청 지정 교원능력개발평가 연구학교형 선도학교 운영
+                <br><hr>2011. 02. 15<br>	2009 개정교육과정 사이버 연수 우수학교(교육감)
+                <br><hr>2013. 09. 01<br>	제21대 이칠우 교장선생님 부임
+                <br><hr>2013. 12. 21<br>	2013 e-러닝 운영 우수학교 표창(교육감)
+                <br><hr>2014. 05. 31<br>	흡연예방 및 금연정책 표창(보건복지부장관)
+                <br><hr>2014. 09. 05<br>	학교폭력 제로학교 표창(교육감)
+                <br><hr>2014. 12. 17<br>	제10차 마이스터고 선정(미래창조과학부, 교육부)
+                <br><hr>2015. 01. 12<br>	소프트웨어분야 마이스터 고등학교지정고시(대구광역시교육청)
+                <br><hr>2015. 12. 04<br>	2015년 안전교육 연구학교 운영 우수학교 표창(교육감)
+                <br><hr>2015. 12. 21<br>	대구소프트웨어고등학교로 교명 변경 고시(대구광역시교육청조례 제4796호)
+                <br><hr>2016. 03. 02<br>	SW분야 마이스터고 대구소프트웨어고등학교 개교
+                <br><hr>2016. 06. 24<br>	대구소프트웨어고등학교 개교식 및 기숙사동 준공식
+                <br><hr>2016. 08. 31<br>	2016년 1차 학교폭력제로학교 교육감 표창
+                <br><hr>2016. 12. 19<br>	2016학년도 교육정보화 우수학교 교육감 표창
+                <br><hr>2016. 12. 31<br>	2016학년도 소프트웨어 프로젝트 실무 발표회
+                <br><hr>2017. 02. 10<br>	제43회 졸업식(총 50명, 누적총계 3,632명)
+                <br><hr>2017. 03. 02<br>	2017학년도 입학식(3학급, 60명)
+                <br><hr>2017. 09. 01<br>	제22대 안병규 교장선생님 부임
+                <br><hr>v2017. 12. 28<br>	2017학년도 소프트웨어 프로젝트 실무 발표회
+                <br><hr>2018. 02. 09<br>    제44회 졸업식(총 48명, 누적총계 3,680명)
+                <br><hr>2018. 03. 02<br>    2018학년도 입학식(3학급, 60명)</h3>
+        </div>
+        <div data-role="footer">
+            <h1>2학년 1반 이효성</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="b">
+        <div data-role="header">
+            <a href="#main_page" data-icon="home" rel="external">Home</a>
+            <h1>학교 시설 소개</h1>
+        </div>
+        <div data-role="content">
+            <h3>
+                <img src="mac.jpg" width="300" height="300" alt="오류난듯..">
+                <br>맥실입니다. 짱짱멋져요.
+            </h3>
+        </div>
+        <div data-role="footer">
+            <h1>2학년 1반 이효성</h1>
+        </div>
+    </div>
+</body>
+</html>
