@@ -1,0 +1,103 @@
+<!-- 
+완료1. 리스트, 표, 이미지를 각각 2개 이상 삽입
+완료2. 목차 부분은 링크로 만들고 앵커로 연결
+완료3. 관련 정보를 클릭하면 학교 홈페이지나 학교 페이스북 등의 학교 관련 웹페이지를 새 창이나 탭에 출력되도록 링크 작성
+완료4. 웹 페이지가 출력되는 동시에 음악 연주 무한 반복
+완료5. 인라인 프레임 두개 이상 사용 
+-->
+
+<!DOCTYPE html>
+<head>
+        <link rel="icon" href="dgsw.png" sizes="64x64">
+
+ <title>DGSW</title>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="schoolsong.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+    <img src="dgsw.png" height="100" width="100" alt="학교로고입니다."> 대구소프트웨어고 
+    </header>
+    <nav>
+        <h3>목차!</h3>
+        <ol>
+            <li><a href="#chap1">학교 소개</a></li>
+            <li><a href="#chap2">학교 관련 링크</a></li>
+            <li><a href="#chap3">학교 홍보 동영상</a></li>
+            <li><a href="#chap4">학교 오는길</a></li>장
+        </ol>
+    </nav>
+    <h2><p id="chap1">1.학교 소개</p></h2>
+    <hr>
+    <section>
+        <table border="0">
+            <thead>
+                <th><img src="teacher.jpg" height="240" width="220" alt="교장센세입니다."></th>
+                <th>대구소프트웨어고등학교를 찾아주신 여러분께 감사드립니다.<br>
+                    우리 학교는 소프트웨어 영마이스터를 양성하기 위해 교육부와 과학기술정보통신부에서 지정 운영하는 소프트웨어 분야 마이스터고등학교입니다.<br>
+                    지금 우리는 변화와 혁신과 창조의 21세기를 살아가고 있습니다.<br>
+                    온 지구촌이 하나가 되어 국경과 민족의 경계가 사라지는 4차 산업혁명이 시작되는 이 시점에서 가장 중요한 것은 창의적인 인재의 양성일 것입니다.<br> 
+                    ‘꿈•희망•행복을 가꾸는 대구교육’이라는 대구교육의 지표에 부응하는 ‘배려심 깊고 창조적이며, 감사할 줄 아는’ 젊은 SW 인재들의 요람이 되기 위하여 본교 구성원 모두가 열심히 노력하고 있습니다.<br>
+                    학교생활을 통하여 우리 학생들은 협업 속에 창의력을 발휘하는 소프트웨어 개발 능력을 체득해 나갈 것입니다.<br>
+                    동시에 창의력, 명확한 의사소통방법, 협상 능력과 협동심 등 미래 사회의 조직을 이끌 수 있는 핵심 역량 또한 익혀 나갈 것입니다.<br>
+                    학생, 학부모, 교직원 모두가 혼연 일체가 되어 소프트웨어 인재 육성의 명문이 되도록 최선을 다하겠습니다.<br>
+                    감사합니다.<hr></th>
+            </thead>
+        </table>
+    </section>
+    <hr>
+
+
+    <h2><p id="chap2">2.학교 관련 링크</p></h2>
+    <hr>
+    <article>
+        <nav>
+            <ol type="a">
+                <li> <a href="http://www.dgsw.hs.kr" target="_blank">학교 홈페이지</a></li>
+                <li> <a href="http://www.dgsw.hs.kr/user/carte/list.do?menuCd=MCD_000000000000029947" target="_blank">급식</a></li>
+                <li> <a href="https://namu.wiki/w/%EB%8C%80%EA%B5%AC%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90" target="_blank">학교 나무위키</a></li>
+            </ol>
+        </nav>
+    </article>
+        <hr>
+
+
+    <h2><p id="chap3">3.학교 홍보 동영상</p></h2>
+    <article>
+        <table border="2">
+            <thead>
+                <th>제목</th>
+                <th>내용</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- summer SW camp.mp4 -->
+                    <td>summer SW camp.mp4</td>
+                    <td><video src="summer SW camp.mp4"
+                            width="540" height="340"
+                            controls>
+                    브라우저가 vidol태그를 지원하지 않습니다.
+                    </video></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <hr>
+    
+
+    <h2><p id="chap4">4.학교 오시는길</p></h2>
+    <hr>
+    <iFrame src="https://map.naver.com/?searchCoord=93f9b23bf3fb332667207cdb8afefe851825f56ebbf945705e8a2766df422045&query=64yA6rWs7IaM7ZSE7Yq47Juo7Ja06rOg65Ox7ZWZ6rWQ&tab=1&lng=b4fd0cb4c900876c7b88c6e773bea5f9&mapMode=0&mpx=06230560%3A35.8872567%2C128.5969618%3AZ11%3A0.0249419%2C0.0118219&lat=a34aaae0a03018a7edd8d91c126ff0c2&dlevel=12&enc=b64&menu=location" width="800" height="800"></iFrame>
+    <footer>네이버 지도</footer>
+    <iFrame src="http://map.daum.net/?map_type=TYPE_MAP&q=%EB%8C%80%EA%B5%AC%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90&urlX=819849&urlY=603423&urlLevel=5" width="800" height="800"></iFrame>
+    <footer>다음 지도</footer> 
+    
+    <hr>
+
+
+    <footer>
+        <a href="servey.html">설문조사</a> &#60;=
+    </footer>
+</body>
+</html>
