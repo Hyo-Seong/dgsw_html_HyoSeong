@@ -1,0 +1,10 @@
+/* h3, li{ color : brown }
+.warning {color : red;}
+body.main {background : aliceblue;} 
+ul#list { background : mistyrose; }*/ /*id셀렉터*/
+
+div>div {background:yellow}
+div strong {color:dodgerblue;}
+*{color : green}
+li:hover{background:rgb(126, 255, 126)}
+h3.main:first-letter{color:red}
