@@ -3,6 +3,7 @@
 body.main {background : aliceblue;} 
 ul#list { background : mistyrose; }*/ /*id셀렉터*/
 
+div{color:rgb(240,0,226);}
 div>div {background:yellow}
 div strong {color:dodgerblue;}
 *{color : green}

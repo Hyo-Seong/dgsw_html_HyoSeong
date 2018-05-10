@@ -1,0 +1,14 @@
+body{
+    background: ghostwhite;
+}
+span{
+    background: deepskyblue;
+}
+div.box{
+    background: yellow;
+    border-style: solid;
+    border-color: peru;
+    margin: 40px;
+    border-width: 30px;
+    padding: 30px;
+}
