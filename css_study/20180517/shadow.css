@@ -1,0 +1,25 @@
+p.drop{
+    text-shadow: 3px 3px black;
+}
+
+p.color{
+    text-shadow: 3px 3px red;
+}
+
+p.blur{
+    text-shadow: 1px 1px 3px skyblue;
+}
+
+p.glow{
+    text-shadow: 0 0 3px red, 0 0 5px black;
+}
+
+p.wordArt{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1px blue;
+}
+
+p.d{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
