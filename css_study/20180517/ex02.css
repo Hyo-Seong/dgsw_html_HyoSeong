@@ -1,0 +1,39 @@
+p.solid_3{
+    border: 3px solid blue;
+}
+
+p.none_3{
+    border: 3px none blue;
+}
+
+p.hidden_3{
+    border: 3px hidden blue;
+}
+
+p.dotted_3{
+    border: 3px dotted blue;
+}
+
+p.dashed_3{
+    border: 3px dashed blue;
+}
+
+p.double_3{
+    border: 3px double blue;
+}
+
+p.groove_15{
+    border: 15px groove yellow;    
+}
+
+p.ridge_15{
+    border: 15px ridge yellow;    
+}
+
+p.inset_15{
+    border: 15px inset yellow;    
+}
+
+p.outset_15{
+    border: 15px outset yellow;    
+}

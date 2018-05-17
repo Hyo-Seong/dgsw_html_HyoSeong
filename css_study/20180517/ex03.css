@@ -1,0 +1,26 @@
+p{
+    background-color: green;
+    color: white;
+    padding: 15px;
+}
+
+p.a{
+    border-radius: 50px;
+}
+
+p.b{
+    border-radius: 0px 20px 40px 60px;
+}
+
+p.c{
+    border-radius: 0px 20px 40px 20px;
+}
+
+p.d{
+    border-radius: 0px 20px 0px 20px;
+}
+
+p.e{
+    border-radius: 50px;
+    border: dotted white;
+}

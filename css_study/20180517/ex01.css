@@ -1,0 +1,6 @@
+div.box{
+    background-color: yellow;
+    margin: 30px;
+    border: 5px dotted red;
+    padding: 20px;
+}
