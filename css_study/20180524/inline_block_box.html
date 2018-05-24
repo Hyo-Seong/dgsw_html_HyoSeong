@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div>p>span{
+            border:2px solid yellowgreen;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>인라인, 인라인 블록, 블록</h2>
+    <hr>
+    <div>
+        <p>나는 <span style="display:none;">div(none)</span>입니다.</p>
+        <p>나는 <span style="display:inline;">div(inline)</span>입니다.</p>
+        <p>나는 <span style="display:inline-block; height: 50px;">div(inline-block)</span>입니다.</p>
+        <p>나는 <span style="display: block;">div</span>
+                <span style="display: block; border: 2px dotted red; background: yellow;">span(block)</span>
+                <span style="display: block;">입니다.</span>
+        </p>
+    </div>
+</body>
+</html>

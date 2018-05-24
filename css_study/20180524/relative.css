@@ -1,0 +1,17 @@
+span{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+span.a:hover{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: green;
+}
