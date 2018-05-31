@@ -1,0 +1,23 @@
+table{
+   border-collapse: collapse;
+}
+td,tfoot th{
+    border-bottom: 1px solid gray;
+}
+td, th{
+    text-align: left;
+    height: 20px;
+    width: 100px;
+    padding: 10px;
+}
+thead, tfoot{
+    background: darkgray;
+    color: yellow;
+}
+
+tbody tr:nth-child(even){
+    background: aliceblue;
+}
+tbody tr:hover{
+    background-color: violet;
+}
