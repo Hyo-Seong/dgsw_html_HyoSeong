@@ -7,12 +7,8 @@
     list-style: none;
 }
 
-div li{
-    width: 140px;
-    margin-right: 5px;
-}
-
 .top-div{
+    list-style-type: none;
     background-color: #008375;
     margin: 0%;
     position: relative;
@@ -22,6 +18,8 @@ div li{
     margin-left: 10px;
 }
 li.top-li2{
+    width: 140px;
+    margin-right: 5px;
     display: inline-block;
     vertical-align: middle;
     font-size: 10px;
@@ -36,6 +34,16 @@ li.top-li{
     padding: 10px;
     color: white;
 }
+
+.top-li3{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    height: 45px;
+    padding: 10px;
+    color: white;
+}
+
 li:hover.top-li {
     background: #34A798;
     
@@ -45,14 +53,24 @@ a.top-a{
     color: white;
     text-decoration: none;
 }
-
+.top-button:hover{
+    background-color: #F5F5F5;
+}
+.top-button{
+    background-color: white; height: 45px; width: 45px; border: 1px solid rgba(0,0,0,.15); cursor: pointer;
+    margin-top: -10px;  
+}
 ul.top-ul{
     list-style-type: none;
     align-content: center;
     margin: 0%;
 }
+.button-img{
+    height: 30px;
+    width: 30px;
+}
 
-img.top-img{
+.top-img{
     height:18.45px ;
     width:18.95px ;
 }
@@ -118,4 +136,8 @@ div>ul>li>div>ul>li:hover{
 .div-menu2>nav>ul>li:hover{
     background-color: #F5F5F5;
     cursor: pointer;
+}
+
+.button-top{
+    background-color: white;    
 }
