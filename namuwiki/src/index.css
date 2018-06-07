@@ -12,12 +12,15 @@ div li{
     margin-right: 5px;
 }
 
-div.top-div{
+.top-div{
     background-color: #008375;
     margin: 0%;
     position: relative;
 }
 
+.top-div>ul>li{
+    margin-left: 10px;
+}
 li.top-li2{
     display: inline-block;
     vertical-align: middle;
@@ -55,25 +58,64 @@ img.top-img{
 }
 
 .div-menu{
+    background-color: white;
     width: 200px;
-    height: 300px;
+    height: 350px;
     border:1px solid rgba(0,0,0,.15);
     color: #373a3c; 
     position: absolute;
     display: none;
     margin-top: 13px;
     margin-left: -68px;
-    
+    font-size: 15px;
 }
 .div-menu>ul>li{
-    padding: 10px;
+    padding: 6px;
     width: 100%;
 
 }
+
+.div-menu2{
+    background-color: white;
+    width: 191px;
+    height: 438px;
+    border:1px solid rgba(0,0,0,.15);
+    color: #373a3c; 
+    position: absolute;
+    display: none;
+    margin-top: 12px;
+    margin-left: -60px;
+    font-size: 15px;
+}
+.div-menu2>nav>ul>li{
+    padding: 5%;
+    width: 100%;
+}
+.div-menu2>nav{
+    border: 1px solid rgba(0,0,0,.15);
+}
+
 .div-menu>ul>li:first-child{
     border-bottom: 1px solid rgba(0,0,0,.15);
 }
 #add-func:hover .div-menu{
     display: block;
 }
+#add-func2:hover .div-menu2{
+    display: block;
+}
 
+div>ul>li>div>ul>li>img{
+    height: 14.4px;
+    width: 14.4px;
+}
+
+div>ul>li>div>ul>li:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.div-menu2>nav>ul>li:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
