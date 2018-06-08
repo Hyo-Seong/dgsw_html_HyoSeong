@@ -158,13 +158,42 @@ div>ul>li>div>ul>li:hover{
 }
 
 .div-middle-left{
-    margin-left: 7%;
     height: 1000px;
-    widows: 2000px;
-    background-color: black;
+    width: 60%;
+    background-color: #fff;
+    left: 50%;
+    position: relative;
+    transform: translateX(-70%);
     display: inline-block;
 }
 
 .div-middle-right{
-    display: inline-block;
+    /* display: inline-block; */
+    float:right;
+}
+.div-middle-right{
+    height: 628px;
+    width: 272px;
+    background-color: #fff;
+    border:1px solid black;
+    position: relative;
+    margin-top: 1.5%;
+    transform: translateX(-70%);
+}
+.div-right-sub{
+    height: 263px;
+    width: 272px;
+    background-color: #fff;
+    float:right;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(65%);
+    margin-bottom: -175px;
+    border:1px solid #000;
+}
+
+.div-right{
+    height: 100%;
+    width: 38%;
+    float: right;
 }
