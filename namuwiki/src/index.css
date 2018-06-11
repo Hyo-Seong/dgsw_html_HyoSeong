@@ -210,6 +210,7 @@ div>ul>li>div>ul>li:hover{
 
 .div-middle-right>ul{
     margin-top: -2px;
+    height: 570px;
 }
 
 
@@ -487,6 +488,15 @@ td p{
 .alert>ul>li>.change-content:hover{
     text-decoration: underline;
 }
+.add>ul>li>span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: darkblue;
+}
+.add>ul>li>span>span:hover{
+    cursor: pointer;
+    color: white;
+}
 
 .recent-conf{
     width: 870px;
@@ -541,9 +551,9 @@ td p{
 
 .recent-disc{
     width: 870px;
-    height: 160px;
+    height: 140px;
     border: 1px solid gray;
-    border-top: 5px solid #00A495;
+    border-top: 5px solid #00A495; 
     left: 50%;
     position: relative;
     transform: translateX(-50%);
@@ -570,12 +580,13 @@ td p{
     padding: 5px;
     list-style-type: disc;
     list-style-position: inside;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     font-size: 0.9rem;
     text-indent: 10px;
     width: 98%;
     left: 50%;
-     position: relative;
-     transform: translateX(-50%);
+    position: relative;
+    transform: translateX(-50%);
  }
 
  .recent-disc>ul>ul>li>.blue-text{
@@ -598,7 +609,7 @@ td p{
 
  .add{
     width: 870px;
-    height: 386px;
+    height: 385.5px;
     border:1.5px solid #00A495;
     left: 50%;
     position: relative;
@@ -623,7 +634,7 @@ td p{
 
  .end{
      width: 870px;
-     height: 200px;
+     height: 210px;
      border-top: 1px solid gray;
      left: 50%;
     position: relative;
@@ -638,6 +649,11 @@ td p{
     cursor: pointer;
  }
 
+ .add>ul>li>img{
+     margin-bottom: -5px;
+     height: 25px;
+     width: 25px;
+ }
  .end>span:hover{
     text-decoration: underline;
     color: #08088A;
@@ -649,7 +665,21 @@ td p{
     height: 10px;
     position: absolute;
 }
-
+.div-middle-right>ul>li>span{
+    float: right;
+}
+.div-middle-right>ul>li>a{
+    color: blue;
+}
+.div-right-sub>ul>li>a{
+    color: blue;
+}
+.div-right-sub>ul>li:hover a{
+    color: darkblue;
+}
+.div-middle-right>ul>li:hover a{
+    color: darkblue;
+}
  .footer>ul>li{
      display: inline-block;
      border-right: 1px solid rgba(0, 0, 0, 0.15);
