@@ -7,7 +7,7 @@
     list-style: none;
 }
 
-.top-div{
+#top-div{
     list-style-type: none;
     background-color: #008375;
     margin: 0%;
@@ -30,7 +30,7 @@
     background-color: #34A798;
     margin-right: 5%; 
 }
-.top-div>ul>li{
+#top-div>ul>li{
     margin-left: 10px;
 }
 li.top-li2{
@@ -659,7 +659,7 @@ td p{
     color: #08088A;
  }
 
-.footer{
+#footer{
     width: 100%;
     background-color: #fff;
     height: 10px;
@@ -680,7 +680,10 @@ td p{
 .div-middle-right>ul>li:hover a{
     color: darkblue;
 }
- .footer>ul>li{
+
+
+
+ #footer>ul>li{
      display: inline-block;
      border-right: 1px solid rgba(0, 0, 0, 0.15);
      padding-left: 10px;
@@ -689,25 +692,35 @@ td p{
      font-size: 0.9rem;
  }
 
- .footer>.first-footer>li:nth-child(2), .footer>.first-footer>li:nth-child(3){
+ #footer>.first-footer>li:nth-child(2), #footer>.first-footer>li:nth-child(3){
     color:#0275d8;
     cursor: pointer;
  }
 
- .footer>.first-footer>li:nth-child(2):hover, .footer>.first-footer>li:nth-child(3):hover{
+ #footer>.first-footer>li:nth-child(2):hover, #footer>.first-footer>li:nth-child(3):hover{
     text-decoration: underline;
     color: #08088A;
  }
 
- .footer>ul>li:last-child{
+ #footer>ul>li:last-child{
      border: none;
  }
 
- .footer>.first-footer{
+ #footer>.first-footer{
      margin-top: 10px;
      margin-left: 20%;
  }
 
- .footer>.last-footer{
+ #footer>.last-footer{
      margin-left: 32%;
  }
+
+ .fixed{
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     width: 108px;
+     background-color: white;
+ }
+
+ 
