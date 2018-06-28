@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex01</title>
+</head>
+<body>
+    <script>
+        var score = prompt("주희님 웹프로그래밍 점수를 입력하세요.", 100);
+        var abc = null;
+        score = parseInt(score);
+        if(score>=90){
+            abc = 'A';
+        } else if(score>=80){
+            abc = 'B';
+        } else if(score>=70){
+            abc = 'C';
+        } else if(score>=60){
+            abc = 'D';
+        } else {
+            abc = 'F';
+        }
+        document.write(score + "는 " + abc + "입니다.");
+    </script>
+
+
+</body>
+</html>
