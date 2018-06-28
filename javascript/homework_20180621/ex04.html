@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>예제04</title>
+</head>
+<body>
+    <h3>예제4: 변수에 들어있는 정수값을 8비트의 2진수로 출력(digit8(v)함수를 이용)</h3>
+    <hr>
+    <script>
+        function pad(n) {
+            var width=8;
+            n = n + '';
+            return n.length >= width ? n : new Array(width - n.length + 1).join('0') + n;
+        }
+        function digit8(v) {
+            var str="";
+            for(i=0;i<8;i++,v<<=1) {
+                if((v & 0x80)) str+= "1";
+                else str += "0";
+            }
+            return str;
+        }
+        var x=10, y=3;
+        document.write("x=10, y=3");
+        document.write("<br>x : ",digit8(x));
+        document.write("<br>y : ",digit8(~x));
+    </script>
+    <hr>
+    <script>
+        document.write("<br>x & y : ",digit8(x&y));
+        document.write("<br>x | y : ",digit8(x|y));
+        document.write("<br>x ^ y : ",digit8(x^y));
+        document.write("<br>~x : ",digit8(~x));
+    </script>
+    <hr>
+    <script>
+        document.write("x << 1 : ",digit8(x<<1)," (",(x<<1).toString(10),")");
+        document.write("<br>x >> 1 : ",digit8(x>>1)," (",(x>>1).toString(10),")");
+    </script>
+</body>
+</html>
