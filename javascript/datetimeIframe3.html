@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <script>
+        var date = new Date();
+        var nowDay = date.getDay();
+        var nowHours = date.getHours();
+        var nowMinutes = date.getMinutes();
+        var nowSeconds = date.getSeconds();
+        if ( nowDay >=0 && nowDay <=5 ) { 
+            document.write("<body style=\"background:green\">");
+        }else{
+            document.write("<body style=\"background:pink\">");
+        }
+        document.write("현재시간 : " + nowHours + "시, " + nowMinutes + "분, " + nowSeconds + "초");
+        document.write("</body>");
+    </script>
+</html>
