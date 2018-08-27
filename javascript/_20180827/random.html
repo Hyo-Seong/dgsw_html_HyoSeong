@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = [];
+        document.write("<h1>난수 10개 생성</h1><hr>생성한 배열값 출력 ");
+        for(i=0;i<10;i++){
+            var temp = Math.floor(Math.random()*100);
+            array.push(temp);
+            document.write(temp + " ");
+        }
+        array.sort();
+        document.write("<hr>제일 큰 수는 " + array[9]);
+        document.write("<hr>정렬 ");
+        for(i=0;i<10;i++){
+            document.write(array[i] + " ");
+        }
+    </script>
+</body>
+</html>

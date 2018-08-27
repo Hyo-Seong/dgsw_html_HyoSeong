@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="weather" style="color:blue; background: yellow" onclick="this.style.color='green'">
+        오늘의 날씨
+        <span style="color:red">맑음</span>
+    </p>
+    <script>
+        var p = document.getElementById("weather");
+        var text = "p.id = " + p.id + "\n";
+        text += "p.tagName = " + p.tagName + "\n";
+        text += "p.innerHTML = " + p.innerHTML + "\n";
+        text += "p.style.color = " + p.style.color + "\n";
+        text += "p.onclick = " + p.onclick + "\n";
+        text += "p.childElementCount = " + p.childElementCount + "\n";
+        text += "너비 = " + p.offestWidth + "\n";
+        text += "높이 = " + p.offestHeight + "\n";
+        alert(text);
+    </script>
+</body>
+</html>
