@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="imgClick()" value="image"/>
+    <input type="button" onclick="textClick()" value="Text"/>
+    <input type="button" onclick="buttonClick()" value="Button"/>
+
+    <script>
+        var img = true;
+        var text = true;
+        var button = true;
+        function imgClick(){
+            if(img){
+                var newDiv = document.createElement("div");
+                newDiv.innerHTML = "<img src=\"dog.jpg\"/>";
+                newDiv.setAttribute("id","imaDiv");
+            document.body.appendChild(newDiv);
+            } else{
+                var myDiv = document.getElementById("imaDiv");
+                var parent = myDiv.parentElement;
+                parent.removeChild(myDiv);
+            }
+            img = !img;
+        }
+
+        function textClick(){
+            if(text){
+                var newDiv = document.createElement("div");
+                newDiv.innerHTML = "This is Text";
+                newDiv.setAttribute("id","textDiv");
+                document.body.appendChild(newDiv);
+            } else{
+                var myDiv = document.getElementById("textDiv");
+                var parent = myDiv.parentElement;
+                parent.removeChild(myDiv);
+            }
+            text = !text;
+        }
+
+        function buttonClick(){
+            if(button){
+                var newDiv = document.createElement("div");
+                newDiv.innerHTML = "<input type=\"button\" value=\"Text\"/>";
+                newDiv.setAttribute("id","btnDiv");
+                document.body.appendChild(newDiv);
+            } else{
+                var myDiv = document.getElementById("btnDiv");
+                var parent = myDiv.parentElement;
+                parent.removeChild(myDiv);
+            }
+            button = !button;
+        }
+    </script>
+</body>
+</html>
