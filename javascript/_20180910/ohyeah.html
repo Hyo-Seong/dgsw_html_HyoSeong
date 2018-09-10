@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p style="color:blue">안녕하세요.
+        <span id="ChangeSpan">
+            제 이름은 홍길동입니다.
+        </span>
+    </p>
+    <input type="button" name="" value="스타일 변경" onclick="change()">
+    <script>
+        function change(){
+            var a = document.getElementById("ChangeSpan");
+            a.style.color="green";
+            a.style.border="dotted pink"
+            a.style.fontSize="36px";
+        }
+
+        function puppy(){
+            var p = document.getElementById("puppy");
+            p.innerHTML = "<img src=\"dog.jpg\"/>";
+        }
+    </script>
+    <hr>
+    <p style="color: pink" id="puppy" onclick="puppy()">
+        글자를 클릭해 보세요.
+    </p>
+</body>
+</html>
