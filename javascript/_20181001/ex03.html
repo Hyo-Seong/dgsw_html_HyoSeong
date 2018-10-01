@@ -1,4 +1,4 @@
-<!-- 이벤트 리스너 생성방법 2. DOM 객체의 이벤트 리스너 프로퍼티에 작성 -->
+<!-- 이벤트 리스너 생성방법 3. DOM 객체 addEventListener() 메소드 활용 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body onload="init()">
-    <p id="pId">마우스를 올려보세요.</p>
+    <p id="pid">마우스를 올려보세요.</p>
     <script type="text/javascript">
     var p;
     function init(){
-        p = document.getElementById("pId");
+        p = document.getElementById("pid");
         p.addEventListener("mouseover", over);
         p.addEventListener("mouseout", out);
     }
