@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="changeImage()">
+    <h4>이미지 크기 출력</h4>
+    <form>
+        <select id="sel" onchange="changeImage()">
+        <option value="image/apeach.jpg">어피치</option>
+        <option value="image/muzi.png">무지</option>
+        <option value="image/neo.png">네오</option>
+        <option value="image/prodo.png">프로도</option>
+        <option value="image/ryan.png">라이언</option>
+        </select>
+        <span id="mySpan">선택 이미지 크기</span>
+    </form>
+    <p><img id="myImg" src="image/apeach.jpg" alt="apeach"></p>
+
+    <script>
+
+        function changeImage(){
+          var select = document.getElementById("sel").value;
+          var image = document.getElementById("myImg");
+          document.getElementById("myImg").src = select;
+          document.getElementById("mySpan").innerHTML = `${image.clientWidth}x${image.clientHeight}`
+    
+        }
+    
+      </script>
+</body>
+</html>

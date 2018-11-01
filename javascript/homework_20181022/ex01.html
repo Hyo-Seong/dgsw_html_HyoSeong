@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>계산기만들기 - eval() <hr></h1>
+    <h3 style="font-size: 20px">수식 입력 후 계산 버튼 클릭</h3>
+    계산식 <input type="text" id="input"><br>
+    결과값 <input type="text" id="result"> <input type="button" onclick="a()" value="계산">
+
+    <script>
+    function a(){
+        document.getElementById("result").value = eval(document.getElementById("input").value);
+    }
+    </script>
+</body>
+</html>

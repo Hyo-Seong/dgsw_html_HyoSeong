@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>
+            마우스무빙
+        </h2>
+        <hr>
+        <img id="img" src="ic_launcher.png" ">
+        <span style="background-color: skyblue;" id="result">test</span>
+    </body>
+    <script>
+        document.getElementById("img").onmousemove = function (e){
+            var result = "screenX, screenY : "+e.screenX+", "+e.screenY+"<BR>"+
+            "clientX, clientY : "+e.clientX+", "+e.clientY+"<BR>"+
+            "offsetX, offsetY : "+e.offsetX+", "+e.offsetY+"<BR>"+
+            "x, y : "+e.x+", "+e.y;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</html>

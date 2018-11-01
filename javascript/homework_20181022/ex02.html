@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>
+            휠 커진다,,, 작아진다,,,
+        </h2>
+        <hr>
+        <span id="text" >냐옹</span>
+    </body>
+    <script>
+        document.getElementById("text").addEventListener('wheel', function(e) {
+        if (e.deltaY < 0) {
+            console.log('scrolling down');
+            document.getElementById("text").style = "border-style: outset; border-width: 5px; border-color: grey;";
+        }
+        if (e.deltaY > 0) {
+            console.log('scrolling up');
+            document.getElementById("text").style = "border-style: outset; border-width: 5px; border-color: pink;";
+        }
+        });
+    </script>
+</html>

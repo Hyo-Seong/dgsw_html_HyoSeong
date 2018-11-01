@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="alert('이 사이트는 2018.12.31. 까지만 유지됩니다.')">
+    페이지 로딩 후 onload리스너가 실행됩니다.
+    <h3>디폴트 행동 취소</h3>
+    <hr>
+    1.
+    <a href="http://naver.com" onclick="return query()">네이버 이동?</a><br>
+    2.
+    <form class="" action="index.html" method="post">
+        <input type="checkbox" value="">1반<br>
+        <input type="checkbox" onclick="noAction(event)">2반<br>
+    </form>
+    <script>
+    function query(){
+        var ret = confirm("네이버로 이동하시겠습니까?");
+        return ret;
+    }
+    function noAction(e){
+        e.preventDefault();
+    }
+    </script>
+</body>
+</html>
