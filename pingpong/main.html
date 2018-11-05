@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script type="text/javascript">
+        var canvas;
+        var canvasContext;
+        var ballX = 50;
+        var ballY = 50;
+        var ballSpeedX = 15;
+        var ballSpeedY = 15;
+
+        var paddle1Y = 250;
+        var paddle2Y = 250;
+
+        const PALDDLE_HEIGHT = 100;
+        const PALDDLE_THICKNESS = 10;
+
+        var player1Score = 0;
+        var player2Score = 0;
+
+        var isAuto = false;
+
+        function calculateMousePos(evt){
+            var rect = canvas.getBoundingClientRect();
+            var root=document.documentElement;
+            var mouseX=evt.clientX-rect.left-root.scrollLeft;
+            var mouseY=evt.clientY-rect.top-root.scrollLeft;
+            return{
+                    x:mouseX,
+                    y:mouseY
+            };
+        }
+
+        window.onload=function(){
+            canvas = document.getElementById("gameCanvas");
+            canvasContext = canvas.getContext("2d");
+            var framePersecond = 30;
+        
+            setInterval(function() {	        
+                moveEverything();
+                drawEverything();
+            }, 1000 / framePersecond);
+            canvas.addEventListener('mousemove',
+				function(evt) {
+					var mousePos = calculateMousePos(evt);
+                    if(!isAuto){
+					    paddle1Y = mousePos.y;
+                    }
+				});
+
+        }
+        function moveEverything(){
+            computerMovement();
+            ballX = ballX + ballSpeedX;
+            ballY = ballY + ballSpeedY;
+
+            if (ballX < 0) {
+                if(ballY>paddle1Y && ballY<paddle1Y+PALDDLE_HEIGHT)
+                {
+                ballSpeedX = -ballSpeedX;
+                }
+                else {
+                    ballReset();
+                    player2Score++;
+                }
+            }
+            if (ballX > canvas.width) {
+            //  ballSpeedX = -ballSpeedX;
+                if(ballY>paddle2Y && ballY<paddle2Y+PALDDLE_HEIGHT)
+                {
+                ballSpeedX = -ballSpeedX;
+                }
+                else {
+                    ballReset();
+                    player1Score++;
+                }
+            }
+            if (ballY > canvas.height) {
+                    ballSpeedY = -ballSpeedY;
+            }
+            if (ballY < 0) {
+                ballSpeedY = -ballSpeedY;
+            }
+        }
+
+        function colorRect(leftX, topY, width, height, drawColor){
+            canvasContext.fillStyle = drawColor;
+            canvasContext.fillRect(leftX, topY, width, height);
+        }
+
+        function colorCircle(centerX, centerY, radius, drawColor) {
+            canvasContext.fillStyle = 'red';
+            canvasContext.beginPath(); //선 그리는 시작함수
+            canvasContext.arc(centerX, centerY, radius,0, Math.PI * 2, true);
+            canvasContext.fill(); //내부 채움
+            canvasContext.closePath();
+        }
+
+        function drawEverything(){
+            colorRect(0, 0, canvas.width, canvas.height, 'black');
+            colorRect(0, paddle1Y, PALDDLE_THICKNESS, PALDDLE_HEIGHT, 'white');
+            colorRect(canvas.width-PALDDLE_THICKNESS, paddle2Y, PALDDLE_THICKNESS, PALDDLE_HEIGHT, 'white');
+            colorCircle(ballX, ballY, 10, 'red');
+            canvasContext.font="30px Arial";
+            canvasContext.fillText("Score "+player1Score+":"+player2Score, 10, 50);
+
+        }
+
+        function computerMovement(){
+            var paddle2YCenter=paddle2Y+(PALDDLE_HEIGHT/2);
+            if(paddle2YCenter<ballY-35){
+                paddle2Y+=25;
+            }
+            else if(paddle2YCenter>ballY+35){
+                paddle2Y-=25;
+            }
+            if(isAuto){
+                var paddle1YCenter=paddle1Y+(PALDDLE_HEIGHT/2);
+                if(paddle1YCenter<ballY-35){
+                    paddle1Y+=25;
+                }
+                else if(paddle1YCenter>ballY+35){
+                    paddle1Y-=25;
+                }
+            }
+        }
+
+        function ballReset(){  //공 제어
+            ballSpeedX = -ballSpeedX;
+            ballX=canvas.width/2;
+            ballY=canvas.height/2;
+        }
+
+        function auto(){
+            isAuto = !isAuto;
+        }
+
+      </script>
+        <input type="button" value="auto-bot" onclick="auto()">
+</body>
+</html>
